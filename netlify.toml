@@ -2,7 +2,8 @@
   publish = "/"
 
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "/index.html"
   status = 200
   force = true
+  conditions = {Path = ["!/*.css"]}
