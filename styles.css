@@ -9,9 +9,12 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #8b8b8b;
   color: #fff;
-  padding: 1em;
+  padding: 0 1em;
   text-align: center;
 }
 
@@ -25,4 +28,34 @@ footer {
   color: #fff;
   padding: 1em;
   text-align: center;
+}
+
+nav {
+  background-color: #8b8b8b;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 20px;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: #555;
 }
