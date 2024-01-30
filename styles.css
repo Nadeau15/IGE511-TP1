@@ -100,9 +100,9 @@ footer {
   -moz-appearance: none;
   -webkit-appearance: none;
   background-color: #555555;
-  border: 1px solid #cccccc;
-  padding: 8px 20px;
-  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
   font-size: 16px;
   color: white;
   cursor: pointer;
@@ -111,12 +111,17 @@ footer {
   background-position: right center;
 }
 
+.language-toggle select:hover {
+  background-color: #777;
+}
+
 .language-toggle select:focus {
   outline: none;
 }
 
 .language-toggle select option {
   color: black;
+  border-radius: 10px;
   background-color: #ffffff;
 }
 

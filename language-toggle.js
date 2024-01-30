@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var lang = this.value;
     var url = window.location.pathname.split('/');
     var langIndex = url.indexOf('en') !== -1 ? url.indexOf('en') : url.indexOf('fr');
-    
+
     if (langIndex !== -1) {
-      url[langIndex] = lang;
+      url[langIndex] = lang.toLowerCase();
       var newUrl = window.location.origin + url.join('/');
       window.location.href = newUrl;
     }
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var url = window.location.pathname.split('/');
   var langIndex = url.indexOf('en') !== -1 ? url.indexOf('en') : url.indexOf('fr');
   if (langIndex !== -1) {
-    var lang = url[langIndex];
+    var lang = url[langIndex].toUpperCase();
     setSelectedLanguage(lang);
   }
 });
