@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /en/private/
+Disallow: /fr/private/
+
+Sitemap: https://nadf0901.tp1ige511.com/sitemap_en.xml
+Sitemap: https://nadf0901.tp1ige511.com/sitemap_fr.xml
