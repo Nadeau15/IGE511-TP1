@@ -125,6 +125,42 @@ footer {
   background-color: #ffffff;
 }
 
+.changelog-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.changelog-table th, .changelog-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.collapsible {
+  display: flex;
+  width: fit-content;
+  padding: 10px 10px;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.collapsible:hover {
+  background-color: #cacaca;
+}
+
+.tip {
+  margin-top: 5px;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+#changelogTable {
+  display: table;
+}
+
 @media screen and (max-width: 768px) {
   nav li {
       float: none;

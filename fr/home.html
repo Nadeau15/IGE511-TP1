@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://nadf0901.tp1ige511.com/fr/home">
   <script src="/language-toggle.js" defer></script>
+  <script src="/changelog-toggle.js" defer></script>
+  <script src="https://kit.fontawesome.com/9c807895ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -46,16 +48,61 @@
     </section>
     <section>
       <div id="changelog">
-        <h2>Journal des modifications</h2>
-        <p>13/02/2024 : Ajout d'un fichier robots.txt</p>
-        <p>13/02/2024 : Ajout de deux sitemaps. Un pour les pages en français et un pour les pages en anglais</p>
-        <p>30/01/2024 : Ajout de traduction pour l'anglais et français</p>
-        <p>23/01/2024 : Ajout d'une balise meta description</p>
-        <p>23/01/2024 : Ajout d'une favicon</p>
-        <p>23/01/2024 : Ajout d'une barre de navigation</p>
-        <p>23/01/2024 : Création de nouvelles pages (à propos, habitat, contact)</p>
-        <p>17/01/2024 : Modification de la balise title pour inclure einyvrsgtheirgtvn</p>
-        <p>16/01/2024 : Création de la page web avec en-tête, pied de page contenant mon nom complet et CIP, une section principale et une section journal des modifications</p>
+        <h2 class="collapsible" onclick="toggleTable()">
+          Journal des modifications
+          <i class="fa-solid fa-chevron-up" id="chevronIcon"></i>
+        </h2>
+        <p class="tip">(Click on the header to expand/collapse)</p>
+        <table class="changelog-table" id="changelogTable">
+          <tr>
+            <th>Date</th>
+            <th>Changements</th>
+          </tr>
+          <tr>
+            <td >27/02/2024</td>
+            <td>La section journal des modifications est maintenant réductible.</td>
+          </tr>
+          <tr>
+            <td >27/02/2024</td>
+            <td>Modification de la section "journal des modifications" pour utiliser un tableau afin de mieux afficher l'information.</td>
+          </tr>
+          <tr>
+            <td >13/02/2024</td>
+            <td>Ajout d'un fichier robots.txt</td>
+          </tr>
+          <tr>
+            <td>13/02/2024</td>
+            <td>Ajout de deux sitemaps. Un pour les pages en français et un pour les pages en anglais</td>
+          </tr>
+          <tr>
+            <td>30/01/2024</td>
+            <td>Ajout de traduction pour l'anglais et français</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Ajout d'une balise meta description</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Ajout d'une favicon</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Ajout d'une barre de navigation</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Création de nouvelles pages (à propos, habitat, contact)</td>
+          </tr>
+          <tr>
+            <td>17/01/2024</td>
+            <td>Modification de la balise title pour inclure einyvrsgtheirgtvn</td>
+          </tr>
+          <tr>
+            <td>16/01/2024</td>
+            <td>Création de la page web avec en-tête, pied de page contenant mon nom complet et CIP, une section principale et une section journal des modifications</td>
+          </tr>
+        </table>
       </div>
     </section>
   </main>

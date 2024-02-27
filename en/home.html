@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://nadf0901.tp1ige511.com/en/home">
   <script src="/language-toggle.js" defer></script>
+  <script src="/changelog-toggle.js" defer></script>
+  <script src="https://kit.fontawesome.com/9c807895ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -45,17 +47,62 @@
       <img src="/assets/hybris.jpg" alt="einyvrsgtheirgtvn" width="431" height="234">
     </section>
     <section>
-      <div id="changelog">
-        <h2>Changelog</h2>
-        <p>13/02/2024 : Added a robots.txt file</p>
-        <p>13/02/2024 : Added two sitemaps. One for my french pages and one for my english pages</p>
-        <p>30/01/2024 : Added translation for english and french</p>
-        <p>23/01/2024 : Added a meta description tag</p>
-        <p>23/01/2024 : Added a favicon</p>
-        <p>23/01/2024 : Added a navigation bar</p>
-        <p>23/01/2024 : Created new pages (about, habitat, contact)</p>
-        <p>17/01/2024 : Modified the title tag to include einyvrsgtheirgtvn</p>
-        <p>17/01/2024 : Created the web page with header, footer containing my full name and CIP, a main section, and a changelog section</p>
+      <div class="changelog" id="changelog">
+        <h2 class="collapsible" onclick="toggleTable()">
+          Changelog
+          <i class="fa-solid fa-chevron-up" id="chevronIcon"></i>
+        </h2>
+        <p class="tip">(Click on the header to expand/collapse)</p>
+        <table class="changelog-table" id="changelogTable">
+          <tr>
+            <th>Date</th>
+            <th>Changes</th>
+          </tr>
+          <tr>
+            <td >27/02/2024</td>
+            <td>Made the changelog section collapsible</td>
+          </tr>
+          <tr>
+            <td >27/02/2024</td>
+            <td>Changed to "changelog" section to use a table to better display the information</td>
+          </tr>
+          <tr>
+            <td >13/02/2024</td>
+            <td>Added a robots.txt file</td>
+          </tr>
+          <tr>
+            <td>13/02/2024</td>
+            <td>Added two sitemaps. One for my french pages and one for my english pages</td>
+          </tr>
+          <tr>
+            <td>30/01/2024</td>
+            <td>Added translation for english and french</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Added a meta description tag</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Added a favicon</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Added a navigation bar</td>
+          </tr>
+          <tr>
+            <td>23/01/2024</td>
+            <td>Created new pages (about, habitat, contact)</td>
+          </tr>
+          <tr>
+            <td>17/01/2024</td>
+            <td>Modified the title tag to include einyvrsgtheirgtvn</td>
+          </tr>
+          <tr>
+            <td>16/01/2024</td>
+            <td>Created the web page with header, footer containing my full name and CIP, a main section, and a changelog section</td>
+          </tr>
+        </table>
       </div>
     </section>
   </main>
